@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            animation
+        </title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .parent{
+                background-color: rgb(173, 167, 167);
+                height: 500px;
+                width: 1000px;
+                position: relative;
+                margin-left: 200px;
+                margin-top: 100px;
+                border-radius: 20px;
+            }
+            .child{
+                background-color: black;
+                height: 100px;
+                width: 100px;
+                border-radius: 50px;
+                position: absolute;
+                animation:anim 5s 2 linear;
+            }
+            @keyframes anim{
+                0%{
+                    top: 0%;
+                    left: 0%;
+                    background-color: aqua;
+                }
+                12.5%{
+                    top:400px;
+                    left: 300px;
+                    background-color: aquamarine;
+                }
+                25%{
+                    top: 0px;
+                    left: 500px;
+                    background-color: blue;
+                }
+                37.5%{
+                    top: 400px;
+                    left: 700px;
+                    background-color: blueviolet;
+                }
+                50%{
+                    top: 0px;
+                    left:900px;
+                    background-color: tomato;
+                }
+                 62.5%{
+                    top: 400px;
+                    left: 700px;
+                    background-color: yellowgreen;
+                }
+                 75%{
+                    top: 0px;
+                    left: 500px;
+                    background-color: yellow;
+                }
+                87.5%{
+                    top:400px;
+                    left: 300px;
+                    background-color: violet;
+                }
+                100%{
+                    top: 0%;
+                    left: 0%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h3 style="margin-top: 40px;padding-left: 650px;">Assignment</h3>
+        <div class="parent">
+
+            <div class="child">
+
+            </div>
+        </div>
+    </body>
+</html>
